@@ -33,7 +33,7 @@ const Page = () => {
   }, []);
 
   const handleSearch = debounce((value, type) => {
-    setSearch(search);
+    setSearch(value);
     onSearch(value, type);
   }, 300);
 

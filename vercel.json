@@ -1,0 +1,14 @@
+{
+  "build": {
+    "env": {
+      "MAPBOX_TOKEN": "pk.eyJ1IjoiYXJkaWZpcm1hbnN5YWgiLCJhIjoiY2tkbnUzeDBpMHZkODJzbWdxYmJwOTY2YSJ9.TiZCytaZB8pRJwMVqE5BOw",
+      "FIREBASE_API_KEY": "AIzaSyDXC-DJpIPo9e928drW99GlBajyzNpESNI",
+      "FIREBASE_AUTH_DOMAIN": "next-firebase-31453.firebaseapp.com",
+      "FIREBASE_DATABASE_URL": "https://next-firebase-31453.firebaseio.com",
+      "FIREBASE_PROJECT_ID": "next-firebase-31453",
+      "FIREBASE_STORAGE_BUCKET": "next-firebase-31453.appspot.com",
+      "FIREBASE_MESSAGING_SENDER_ID": "657477356902",
+      "FIREBASE_APP_ID": "1:657477356902:web:a016827f9eaea8c94d0ca7"
+    }
+  }
+}
