@@ -5206,6 +5206,11 @@ react-map-gl@^5.2.0:
     react-virtualized-auto-sizer "^1.0.2"
     viewport-mercator-project "^6.2.3 || ^7.0.1"
 
+react-multi-carousel@^1.4.0:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-1.4.6.tgz#f6d9851e73e5db7bd3a3ebbd2c6f41cbc4748c7a"
+  integrity sha512-M/1zRq07i9FhDYvH9qHwnu8T8hgz0TzL6kLS/5J+yFOARkSMsb+K42bSHmzVwiPyY03DUKuOsW5AXMMRnzt5LA==
+
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"

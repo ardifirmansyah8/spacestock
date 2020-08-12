@@ -57,3 +57,19 @@ export const usePlaces = () => {
     onSearch,
   ];
 };
+
+export const useDetail = () => {
+  const [loading, setLoading] = useState(false);
+  const [detail, setDetail] = useState(null);
+
+  const getDetail = name => {
+    setLoading(true);
+    const findDetail = places.find(place => place.name === name);
+    if (findDetail) {
+      setDetail(findDetail);
+    }
+    setLoading(false);
+  };
+
+  return [loading, detail, getDetail];
+};

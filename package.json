@@ -12,6 +12,7 @@
     "lodash": "^4.17.19",
     "next": "^9.5.1",
     "react": "^16.13.1",
+    "react-multi-carousel": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.0"
   },

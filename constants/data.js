@@ -7,16 +7,16 @@ export const places = [
     name: 'Bassura City',
     description:
       'Bassura City adalah sebuah kawasan hunian superblok dengan konsep mixed Use Development.',
-    facilities: ['Swimming Pool'],
+    facilities: ['Swimming Pool', 'Mall', 'Restaurant'],
     types: 'Apartment',
     images: {
       primary:
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/df7c9353_z.jpg?impolicy=fcrop&w=400&h=250',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/df7c9353_z.jpg?impolicy=fcrop&w=1000&h=500',
       others: [
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/8cb33338_z.jpg?impolicy=fcrop&w=400&h=250',
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/3b57b3ad_z.jpg?impolicy=fcrop&w=400&h=250',
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/df7c9353_z.jpg?impolicy=fcrop&w=400&h=250',
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/8c5e2919_z.jpg?impolicy=fcrop&w=400&h=250',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/8cb33338_z.jpg?impolicy=fcrop&w=1000&h=500',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/3b57b3ad_z.jpg?impolicy=fcrop&w=1000&h=500',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/df7c9353_z.jpg?impolicy=fcrop&w=1000&h=500',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551700/39551635/8c5e2919_z.jpg?impolicy=fcrop&w=1000&h=500',
       ],
     },
     address: {
@@ -35,10 +35,11 @@ export const places = [
     types: 'Apartment',
     images: {
       primary:
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/ac966a98_z.jpg?impolicy=fcrop&w=400&h=250',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/ac966a98_z.jpg?impolicy=fcrop&w=1000&h=500',
       others: [
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/cedd2886_z.jpg?impolicy=fcrop&w=400&h=250',
-        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/ac966a98_z.jpg?impolicy=fcrop&w=400&h=250',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/cedd2886_z.jpg?impolicy=fcrop&w=1000&h=500',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/ac966a98_z.jpg?impolicy=fcrop&w=1000&h=500',
+        'https://exp.cdn-hotels.com/hotels/40000000/39560000/39551200/39551152/cedd2886_z.jpg?impolicy=fcrop&w=1000&h=500',
       ],
     },
     address: {
@@ -59,6 +60,8 @@ export const places = [
       primary:
         'http://all-jakarta-apartments.com/wp-content/uploads/2019/02/Pool-Area-Senopati-Suites.jpg',
       others: [
+        'http://all-jakarta-apartments.com/wp-content/uploads/2019/02/Pool-Area-Senopati-Suites.jpg',
+        'http://all-jakarta-apartments.com/wp-content/uploads/2019/02/Pool-Area-Senopati-Suites.jpg',
         'http://all-jakarta-apartments.com/wp-content/uploads/2019/02/Pool-Area-Senopati-Suites.jpg',
       ],
     },
@@ -82,6 +85,7 @@ export const places = [
       others: [
         'https://pix10.agoda.net/hotelImages/6270985/0/d7c9e1d67f95a0cc054a588508fdb268.jpg?s=1024x768',
         'https://www.sewa-apartemen.net/images11/100146_1.jpg',
+        'https://www.sewa-apartemen.net/images11/100146_1.jpg',
       ],
     },
     address: {
@@ -104,6 +108,7 @@ export const places = [
         'https://pix10.agoda.net/hotelImages/6270985/0/d7c9e1d67f95a0cc054a588508fdb268.jpg?s=1024x768',
       others: [
         'https://pix10.agoda.net/hotelImages/6270985/0/d7c9e1d67f95a0cc054a588508fdb268.jpg?s=1024x768',
+        'https://www.sewa-apartemen.net/images11/100146_1.jpg',
         'https://www.sewa-apartemen.net/images11/100146_1.jpg',
       ],
     },

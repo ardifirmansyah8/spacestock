@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
 import debounce from 'lodash/debounce';
 
 import { types } from '../constants/data';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import DataNotFound from '../components/DataNotFound';
 import Loader from '../components/Loader';
 import Input from '../components/Form/Input';
 import Select from '../components/Form/Select';
@@ -15,6 +17,8 @@ const Map = dynamic(() => import('../components/Map'), {
 });
 
 const Page = () => {
+  const router = useRouter();
+
   const [
     loading,
     page,
@@ -42,6 +46,10 @@ const Page = () => {
     onSearch(search, value);
   };
 
+  const goToDetail = place => {
+    router.push(`/detail/${place}`);
+  };
+
   return (
     <div className="h-screen">
       <div className="flex items-center justify-center border-b border-gray-300 shadow p-2">
@@ -55,26 +63,18 @@ const Page = () => {
 
       <div className="flex">
         <div className="flex-1 bg-gray-100 px-6 py-4">
-          {loading && (
-            <div className="h-full flex items-center justify-center">
-              <Loader />
-            </div>
-          )}
+          {loading && <Loader />}
 
-          {!loading && places.length === 0 && (
-            <div className="h-full flex items-center justify-center">
-              Data not found
-            </div>
-          )}
-
-          {!loading && places.length !== 0 && (
+          {!loading && places.length === 0 ? (
+            <DataNotFound />
+          ) : (
             <>
               <div
                 className="grid grid-cols-2 gap-6 mb-6"
                 style={{ minHeight: 715 }}
               >
                 {places.map((data, i) => (
-                  <Card key={i} data={data} />
+                  <Card key={i} data={data} onClick={goToDetail} />
                 ))}
               </div>
 
@@ -97,7 +97,7 @@ const Page = () => {
         </div>
 
         <div className="flex-1" style={{ minHeight: 813 }}>
-          <Map data={places} />
+          <Map data={places} markerClick={goToDetail} />
         </div>
       </div>
     </div>

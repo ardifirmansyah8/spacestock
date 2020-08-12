@@ -1,8 +1,9 @@
-const Card = ({ data = {} }) => {
+const Card = ({ data = {}, onClick }) => {
   return (
     <div
-      className="flex flex-col cursor-pointer rounded overflow-hidden shadow-lg"
+      className="flex flex-col cursor-pointer rounded overflow-hidden shadow-lg border border-gray-400"
       style={{ maxHeight: 350 }}
+      onClick={() => onClick(data.name)}
     >
       <img
         className="w-full"
@@ -11,7 +12,7 @@ const Card = ({ data = {} }) => {
         style={{ height: 185 }}
       />
       <div className="p-4 flex-1 flex flex-col" style={{ minHeight: 160 }}>
-        <div className="fon6 py-4t-bold text-base mb-2">{data.name}</div>
+        <div className="font-bold text-base mb-2">{data.name}</div>
         <div className="flex-1 text-gray-700 text-xs mb-4">
           {data.description !== ''
             ? data.description.length <= 100
